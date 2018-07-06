@@ -6,8 +6,9 @@ def my_select(collection)
     while i < collection.length
       if (yield collection[i]) == true
         selected_out_of_collection.push(collection[i])
-        i = i + 1
-  end
+      end
+     i = i + 1
+   end
   new_array
   end
 end
