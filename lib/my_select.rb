@@ -3,7 +3,7 @@ def my_select(collection)
     selected_out_of_collection = []
     i = 0
     while i < collection.length
-      if (yield collection[i]) == true
+      if (yield collection[i]) === true
         selected_out_of_collection.push(collection[i])
       end
       i = i + 1
