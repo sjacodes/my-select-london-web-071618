@@ -3,11 +3,13 @@ def my_select(collection)
     selected_out_of_collection = []
     i = 0
     while i < collection.length
-      if 
+      if yield (collection[i])
       
-    
-while i<collection.length
-      if (yield collection[i]) === true
-        selected << collection[i]
-      end 
-      i += 1
+  while i<collection.length 
+if yield(collection[i])==true
+  new_array.push(collection[i])
+end
+i+=1 
+end
+new_array
+end
